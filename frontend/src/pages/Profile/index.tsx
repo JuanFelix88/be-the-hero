@@ -65,8 +65,12 @@ const Profile: React.FC = () => {
       <h1>Casos cadastrados</h1>
 
       <ul>
-        {incidents.map(incident => (
-          <li key={incident.id}>
+        {incidents.map((incident, i) => (
+          <li
+            render-delay={0}
+            style={{ animationDelay: `${i * 150}ms` }}
+            key={incident.id}
+          >
             <strong>CASO: </strong>
             <p>{incident.title}</p>
             <strong>DESCRIÇÃO:</strong>

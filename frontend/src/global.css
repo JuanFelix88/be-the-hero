@@ -83,3 +83,14 @@ form textarea {
 .back-link:hover {
   opacity: 0.8;
 }
+
+@keyframes show-container {
+  from {
+    opacity: 0;
+    transform: translateX(-1%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
