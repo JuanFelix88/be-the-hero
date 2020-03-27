@@ -1,0 +1,21 @@
+root = true
+
+[*]
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.ts,*d.ts]
+indent_style = tab
+
+[{*d.ts}]
+indent_style = space
+indent_size = 4
+
+
+[{*.ts,*.js,*.yml,*.md}]
+indent_style = space
+indent_size = 2
